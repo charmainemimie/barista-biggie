@@ -1,5 +1,5 @@
 import ArcadeLanding from "../components/arcade-landing"
 
-export default function Page() {
+export default function LandingPage() {
   return <ArcadeLanding />
 }
