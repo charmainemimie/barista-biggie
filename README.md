@@ -29,17 +29,10 @@ Welcome to the **Miracle Arcade** frontend — a vibrant, modern web interface f
 
 ---
 
-## 📌 Future Improvements
-- Add game listings and images
-- Enable booking/reservation functionality
--Admin dashboard for game and time management
--Responsive game calendar
--Connect to backend for data persistence
-
 ## 🧰 Project Setup
 
    ```bash
-   git clone https://github.com/charmainemimie/chivhu-arcade-frontend.git
+   git clone https://github.com/charmainemimie/arcade-frontend.git
    cd arcade-frontend
    npm install
    npm run dev
