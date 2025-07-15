@@ -1,5 +1,5 @@
 import LandingPage from './pages/landing-page'
-import './App.css'
+//import './App.css'
 
 function App() {
  

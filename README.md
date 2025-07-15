@@ -1,69 +1,40 @@
-# React + TypeScript + Vite
+from pathlib import Path
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Define the README content
+readme_content = """
+# 🎮 Miracle Arcade Frontend
 
-Currently, two official plugins are available:
+Welcome to the **Miracle Arcade** frontend — a vibrant, modern web interface for Chivhu’s premier gaming destination. Built with **React**, **TypeScript**,**TailwindCSS**, **Shadcn** and **Vite**, the app offers a fast, responsive, and engaging experience for gamers to explore available games, reserve time slots, and stay updated on opening hours and location.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Technology       | Purpose                                                   |
+|------------------|-----------------------------------------------------------|
+| **React**        | UI library for building interactive user interfaces       |
+| **TypeScript**   | Adds static typing to JavaScript for better developer experience |
+| **Vite**         | Lightning-fast build tool and dev server                  |
+| **Tailwind CSS** | Utility-first CSS framework for custom designs            |
+| **shadcn/ui**    | Pre-styled components built with Tailwind + Radix UI      |             
+| **PostCSS**      | CSS processing pipeline (required by Tailwind)            |
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🎮 Stylish landing page with call-to-action sections
+- 📅 Reserve time slots (button and flow coming soon)
+- 🕹️ View available games (button and games view coming soon)
+- 📍 Display location and daily hours
+- ✨ Smooth, responsive design using Tailwind and Shadcn UI
+- 🧼 Clean and maintainable codebase with ESLint
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧰 Project Setup
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/your-username/chivhu-arcade-frontend.git
+   cd arcade-frontend
