@@ -1,7 +1,4 @@
-from pathlib import Path
 
-# Define the README content
-readme_content = """
 # 🎮 Miracle Arcade Frontend
 
 Welcome to the **Miracle Arcade** frontend — a vibrant, modern web interface for Chivhu’s premier gaming destination. Built with **React**, **TypeScript**,**TailwindCSS**, **Shadcn** and **Vite**, the app offers a fast, responsive, and engaging experience for gamers to explore available games, reserve time slots, and stay updated on opening hours and location.
@@ -32,9 +29,17 @@ Welcome to the **Miracle Arcade** frontend — a vibrant, modern web interface f
 
 ---
 
+## 📌 Future Improvements
+- Add game listings and images
+- Enable booking/reservation functionality
+-Admin dashboard for game and time management
+-Responsive game calendar
+-Connect to backend for data persistence
+
 ## 🧰 Project Setup
 
-1. **Clone the repo**  
    ```bash
-   git clone https://github.com/your-username/chivhu-arcade-frontend.git
+   git clone https://github.com/charmainemimie/chivhu-arcade-frontend.git
    cd arcade-frontend
+   npm install
+   npm run dev
