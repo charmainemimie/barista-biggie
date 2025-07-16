@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Link } from "react-router-dom"
 
 export default function CTASection() {
   return (
@@ -23,7 +24,7 @@ export default function CTASection() {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg bg-transparent"
               >
-                Browse All Games
+                <Link to="/games">Browse All Games</Link>
               </Button>
             </div>
             <div className="mt-8 text-gray-300">
