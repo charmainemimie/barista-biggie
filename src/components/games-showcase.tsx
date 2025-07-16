@@ -1,5 +1,6 @@
-import GameCard from "./game-card"
-import { Button } from "@/components/ui/button"
+import GameCard from "./game-card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const popularGames = [
   {
@@ -44,7 +45,7 @@ const popularGames = [
     players: "1-2 Players",
     isPopular: false,
   },
-]
+];
 
 export default function GamesShowcase() {
   return (
@@ -55,7 +56,8 @@ export default function GamesShowcase() {
             Popular <span className="text-yellow-400">Games</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Discover our most loved arcade games, from classic retro favorites to the latest releases
+            Discover our most loved arcade games, from classic retro favorites
+            to the latest releases
           </p>
         </div>
 
@@ -77,10 +79,10 @@ export default function GamesShowcase() {
             size="lg"
             className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold px-8 py-3 text-lg"
           >
-            View All Games
+            <Link to="/games">View All Games</Link>
           </Button>
         </div>
       </div>
     </section>
-  )
+  );
 }

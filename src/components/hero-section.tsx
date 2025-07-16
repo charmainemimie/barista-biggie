@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
 
 export default function HeroSection() {
   return (
@@ -14,7 +15,7 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-3 text-lg">
-            Browse Games
+           <Link to="/games">Browse Games</Link>
           </Button>
           <Button
             size="lg"
