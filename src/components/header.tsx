@@ -9,7 +9,7 @@ const Header = () => {
           <span className="ml-2 text-xl font-bold text-white">Miracle Arcade</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link to="#games" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
+          <Link to="/games" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
             Games
           </Link>
           <Link to="/pricing" className="text-sm font-medium text-white/80 hover:text-white transition-colors">
