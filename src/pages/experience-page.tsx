@@ -28,7 +28,7 @@ export default function ExperiencePage() {
             description="Orchestrated café operations with finesse, steering a dedicated team, optimizing inventory, and elevating customer experiences in a dynamic, high-volume setting. Leveraged extensive knowledge of Robusta, Arabica, Liberica, and Excelsa beans to select premium varietals, tailoring blends to enhance beverage profiles. Meticulously calibrated grinders to achieve optimal particle size and adjusted extraction parameters to deliver smooth, balanced espresso profiles without bitterness. Mastered milk frothing techniques to create velvety microfoam, enhancing cappuccinos, lattes, and signature drinks. Spearheaded a transformative menu overhaul, introducing innovative beverages like the Cappuccino & Red Velvet Cake Pairing and non-coffee crushers (Raspberry Crusher, Cherry Crusher, Passion Fruit Crusher, Watermelon Crusher), which have driven a 17.5% sales increase to date. Trained staff in bean selection, precision brewing, and frothing methods, ensuring consistent quality across 100+ daily orders, fostering enduring customer loyalty."
             achievement="17.5% Sales Increase"
             achievementIcon="sales"
-            image="../src/assets/biggie/salute1.jpg"
+            image="https://i.ibb.co/5XSJZxR0/salute1.jpg"
           />
 
           <ExperienceCard
