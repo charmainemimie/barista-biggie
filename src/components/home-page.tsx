@@ -6,7 +6,7 @@ import { HeroSection } from "@/components/hero-section"
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import ExperiencePage from "../pages/experience-page"
-
+import PortfolioPage from "../pages/portfolio-page"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-coffee-dark via-coffee-medium to-coffee-dark">
@@ -79,68 +79,7 @@ export default function HomePage() {
  <ExperiencePage />
 
       {/* Artisanal Blends */}
-      <section className="py-16 px-4 bg-coffee-dark/50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-cream-light mb-12">Signature Artisanal Blends</h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Coffee Freezo",
-                description:
-                  "A virtuoso creation blended with premium coffee freezo powder, chilled milk, and crowned with whipped cream and coffee beans.",
-                image: "/placeholder.svg?height=250&width=250",
-              },
-              {
-                name: "Cappuccino & Red Velvet Cake Pairing",
-                description:
-                  "Classic cappuccino with rich double-shot espresso paired harmoniously with luscious red velvet cake.",
-                image: "/placeholder.svg?height=250&width=250",
-              },
-              {
-                name: "Mango Crusher",
-                description:
-                  "A radiant tropical escape crafted with mango fruit concentrate, creating a chilled, slushy ambrosia.",
-                image: "/placeholder.svg?height=250&width=250",
-              },
-              {
-                name: "Butterscotch Latte",
-                description:
-                  "Decadent masterpiece with robust espresso, creamy white symphony, and rich butterscotch syrup.",
-                image: "/placeholder.svg?height=250&width=250",
-              },
-              {
-                name: "Mixedberry Crusher",
-                description:
-                  "Vibrant burst of berry bliss with mixed berry syrup, achieving perfect tart and sweet balance.",
-                image: "/placeholder.svg?height=250&width=250",
-              },
-              {
-                name: "Lemonade Crusher",
-                description:
-                  "Zesty, invigorating delight with lemonade concentrate, garnished with fresh mint for elevated charm.",
-                image: "/placeholder.svg?height=250&width=250",
-              },
-            ].map((blend, index) => (
-              <Card key={index} className="bg-coffee-medium/40 border-cream-light/20 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="aspect-square rounded-lg overflow-hidden mb-4">
-                    <img
-                      src={blend.image || "/placeholder.svg"}
-                      alt={blend.name}
-                      width={250}
-                      height={250}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold text-gold-accent mb-2">{blend.name}</h3>
-                  <p className="text-cream-light/90 text-sm">{blend.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+  <PortfolioPage />
 
       {/* Skills */}
       <section className="py-16 px-4">

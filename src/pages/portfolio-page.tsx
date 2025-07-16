@@ -5,13 +5,13 @@ const blends = [
     name: "Coffee Freezo",
     description:
       "A virtuoso creation blended with premium coffee freezo powder, chilled milk, and crowned with whipped cream and coffee beans. Perfected at Baristas@Work, contributing to a 30% sales surge.",
-    image: "/placeholder.svg?height=250&width=250",
+    image: "https://i.ibb.co/35kBJ9fG/profile1.jpg",
   },
   {
     name: "Cappuccino & Red Velvet Cake Pairing",
     description:
       "Classic cappuccino with rich double-shot espresso paired harmoniously with luscious red velvet cake. The cake's subtle cocoa notes enhance the cappuccino's nutty depth.",
-    image: "/placeholder.svg?height=250&width=250",
+    image: "https://i.ibb.co/8DLB7zkg/IMG-2868.jpg",
   },
   {
     name: "Mango Crusher",
