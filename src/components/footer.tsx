@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 text-cream-light font-bold text-xl mb-4">
-              <Coffee className="w-6 h-6 text-gold-accent" />
+              <Coffee className="w-6 h-6 text-gold-accent"/>
               <span>Biggie Komborerai Shiri</span>
             </div>
             <p className="text-cream-light/90 text-sm">
@@ -32,7 +32,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-gold-accent" />
-                <span>+27 123 456 789</span>
+                <span>+27 67 244 3534</span>
               </div>
             </div>
           </div>
