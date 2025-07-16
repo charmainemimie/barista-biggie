@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin } from "lucide-react";
+//import { MapPin } from "lucide-react";
 
 export default function LocationMap() {
   return (

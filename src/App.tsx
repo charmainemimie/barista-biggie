@@ -1,5 +1,6 @@
 import LandingPage from './pages/landing-page'
 import ContactPage from './pages/contact-page'
+import PricingPage from './pages/pricing-page'
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
       </Routes>
     </Router>
 
