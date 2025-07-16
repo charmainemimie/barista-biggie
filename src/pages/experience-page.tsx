@@ -38,7 +38,7 @@ export default function ExperiencePage() {
             description="Directed operations at a bustling Pretoria café, leading a proficient barista team with strategic oversight, streamlining inventory through meticulous stock ordering, and sourcing cost-effective suppliers to optimize operational efficiency. Ensured team excellence by vigilantly supervising staff performance, fostering accountability and adherence to high standards. Applied expert knowledge of Robusta, Arabica, Liberica, and Excelsa beans to curate exceptional roasts, selecting varietals to enhance beverage profiles. Fine-tuned grinder settings to optimize flavor extraction and calibrated espresso machines for smooth, non-bitter shots. Perfected milk frothing to achieve silken textures, elevating beverages like cappuccinos and lattes. Pioneered innovative drinks, including the Coffee Freezo, Mango Crusher, Lemonade Crusher, Pineapple Coconut Crusher, Strawberry Crusher, and Blueberry Vanilla Crusher, which collectively catalyzed a 30% sales surge. Expertly prepared cappuccinos, hot chocolates, café lattes, Americanos, and other artisanal beverages, managing 100+ daily orders with precision and charisma. My strategic leadership and technical expertise cemented the café’s status as a cherished local gem."
             achievement="30% Sales Surge"
             achievementIcon="sales"
-            image="../src/assets/biggie/baristas1.jpg"
+            image="https://i.ibb.co/WNgd1cRz/baristas1.jpg"
           />
 
           <ExperienceCard
@@ -48,7 +48,7 @@ export default function ExperiencePage() {
             description="Commanded barista operations across three bustling Coffee Cousins locations with authoritative leadership, ensuring seamless operations and exceptional beverage quality. Masterfully managed inventory by overseeing stock sufficiency, coordinating the timely distribution of supplies from central storage to each shop, and maintaining optimal stock levels to support high-volume service. Spearheaded the onboarding and training of new staff, imparting expertise in coffee preparation and customer engagement to uphold impeccable standards. Strategically crafted schedules to ensure efficient staffing across all locations, balancing operational needs with team well-being. Demonstrated mastery in selecting and blending Robusta, Arabica, Liberica, and Excelsa beans to craft balanced, flavorful beverages. Adjusted grinder settings to perfect grind consistency and optimized extraction times for smooth, non-bitter espresso. Excelled in frothing milk to achieve a glossy, velvety texture, enhancing the quality of milk-based drinks. Crafted cappuccinos, hot chocolates, café lattes, Americanos, and diverse beverages, serving 100+ patrons daily with alacrity and warmth. Forged meaningful connections with a diverse clientele, leveraging fluency in English, Shona, and conversational A2 German to cultivate a vibrant, inclusive café culture."
             achievement="3 Locations Managed"
             achievementIcon="locations"
-            image="../src/assets/biggie/coffeecousins2.jpg"
+            image="https://i.ibb.co/jkwCrX5P/coffeecousins2.jpg"
           />
         </div>
 
@@ -72,7 +72,7 @@ export default function ExperiencePage() {
                 <div className="space-y-4">
                   <div className="aspect-video rounded-lg overflow-hidden">
                     <img
-                      src="../src/assets/biggie/wedding1.jpg"
+                      src="https://i.ibb.co/kVjvfqqN/wedding1.jpg"
                       alt="Wedding Coffee Station"
                       width={300}
                       height={200}
@@ -110,7 +110,7 @@ export default function ExperiencePage() {
                 <div className="space-y-4">
                   <div className="aspect-video rounded-lg overflow-hidden">
                     <img
-                      src="../src/assets/biggie/festival1.jpg"
+                      src="https://i.ibb.co/ZpZqrznk/festival1.jpg"
                       alt="Festival Coffee Setup"
                       width={300}
                       height={200}
