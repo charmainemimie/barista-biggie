@@ -1,41 +1,35 @@
+# ☕ Barista Portfolio — Biggie Komborerai Shiri
 
-# 🎮 Miracle Arcade Frontend
+Welcome to the **Barista Portfolio** project, a modern and responsive web portfolio for Biggie Komborerai Shiri, a passionate and experienced barista who has crafted unforgettable coffee experiences across Pretoria and beyond.
 
----
+This portfolio was built using **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**, offering a sleek, accessible, and engaging presentation of Biggie’s coffee journey, expertise, and unique creations.
 
- Welcome to the **Miracle Arcade** frontend, a project born from my deep passion to bring joy, fun, and technology to my hometown, **Chivhu**. This lively town is full of **jovial kids, energetic teens, and fun-loving adults**, all of whom deserve a space to laugh, compete, and connect. Built with **React**, **TypeScript**, **TailwindCSS**, **Shadcn**, and **Vite**, this modern web interface lays the foundation for a future gaming arcade where the community can explore exciting games, reserve play sessions, and stay updated on events and location details. This is more than just code, it's a dream in the making for Chivhu.
+## 🧑‍💻 Tech Stack
+
+- **React** – Component-based UI library
+- **TypeScript** – Type-safe JavaScript for maintainability
+- **Tailwind CSS** – Utility-first CSS framework for fast styling
+- **shadcn/ui** – Accessible UI components built with Tailwind and Radix UI
+- **Vite** – Fast development build tool
+
+## 📸 Project Purpose
+
+The goal of this project is to present **Biggie’s** professional journey in an elegant, interactive, and highly visual format. It showcases:
+
+- His years of barista experience at top coffee shops
+- Signature coffee creations like the *Coffee Freezo* and *Mango Crusher*
+- His role in boosting café sales through innovation
+- Personal touches like vision, mission, and event contributions
+
+## ✨ Features
+
+- 💼 Professionally styled sections: Vision, Mission, Work History, and Special Events
+- 🍹 Dedicated showcase for **artisanal beverages** with descriptions and photos
+- 🌍 Multilingual capabilities (English, Shona, and conversational German)
+- 📱 Fully responsive design — perfect for desktop and mobile viewing
+- 🧠 Clean and maintainable TypeScript code structure
+
+## Made with ❤️ by Charmaine
 
 
----
 
-## 🛠️ Technologies Used
-
-| Technology       | Purpose                                                   |
-|------------------|-----------------------------------------------------------|
-| **React**        | UI library for building interactive user interfaces       |
-| **TypeScript**   | Adds static typing to JavaScript for better developer experience |
-| **Vite**         | Lightning-fast build tool and dev server                  |
-| **Tailwind CSS** | Utility-first CSS framework for custom designs            |
-| **shadcn/ui**    | Pre-styled components built with Tailwind + Radix UI      |             
-| **PostCSS**      | CSS processing pipeline (required by Tailwind)            |
-
----
-
-## 🚀 Features
-
-- 🎮 Stylish landing page with call-to-action sections
-- 📅 Reserve time slots (button and flow coming soon)
-- 🕹️ View available games (button and games view coming soon)
-- 📍 Display location and daily hours
-- ✨ Smooth, responsive design using Tailwind and Shadcn UI
-- 🧼 Clean and maintainable codebase with ESLint
-
----
-
-## 🧰 Project Setup
-
-   ```bash
-   git clone https://github.com/charmainemimie/arcade-frontend.git
-   cd arcade-frontend
-   npm install
-   npm run dev

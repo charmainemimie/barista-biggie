@@ -1,12 +1,11 @@
-import LandingPage from './pages/landing-page'
-import ContactPage from './pages/contact-page'
-import PricingPage from './pages/pricing-page'
-import GamesPage from './pages/games-page'
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
+import HomePage from "./components/home-page";
+import RootLayout from "./components/layout";
 
 function App() {
  
@@ -14,12 +13,11 @@ function App() {
   return (
     <>
     <Router>
+    <RootLayout>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/pricing" element={<PricingPage />} />
-        <Route path="/games" element={<GamesPage />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
+      </RootLayout>
     </Router>
 
       
