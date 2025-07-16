@@ -1,41 +1,41 @@
-import { BlendCard } from "../components/blend-card"
+import { BlendCard } from "@/components/blend-card"
 
 const blends = [
   {
     name: "Coffee Freezo",
     description:
       "A virtuoso creation blended with premium coffee freezo powder, chilled milk, and crowned with whipped cream and coffee beans. Perfected at Baristas@Work, contributing to a 30% sales surge.",
-    image: "https://i.ibb.co/35kBJ9fG/profile1.jpg",
+    image: "../src/assets/biggie/profile1.jpg",
   },
   {
     name: "Cappuccino & Red Velvet Cake Pairing",
     description:
       "Classic cappuccino with rich double-shot espresso paired harmoniously with luscious red velvet cake. The cake's subtle cocoa notes enhance the cappuccino's nutty depth.",
-    image: "https://i.ibb.co/8DLB7zkg/IMG-2868.jpg",
+    image: "../src/assets/biggie/redvelvet1.jpg",
   },
   {
     name: "Mango Crusher",
     description:
       "A radiant tropical escape crafted with mango fruit concentrate, creating a chilled, slushy ambrosia. Garnished with fresh mint and dried mango slice.",
-    image: "/placeholder.svg?height=250&width=250",
+    image: "../src/assets/biggie/mango1.png",
   },
   {
     name: "Butterscotch Latte",
     description:
       "Decadent masterpiece with robust espresso, creamy white symphony, and rich butterscotch syrup, crowned with impeccably frothed milk for a velvety finish.",
-    image: "/placeholder.svg?height=250&width=250",
+    image: "../src/assets/biggie/butterscotch1.jpg",
   },
   {
     name: "Mixedberry Crusher",
     description:
       "Vibrant burst of berry bliss with mixed berry syrup, achieving perfect tart and sweet balance. A refreshing non-coffee delight that captivates guests.",
-    image: "/placeholder.svg?height=250&width=250",
+    image: "../src/assets/biggie/mixedberry1.jpg",
   },
   {
     name: "Lemonade Crusher",
     description:
       "Zesty, invigorating delight with lemonade concentrate, garnished with fresh mint for elevated charm. Contributes to vibrant menu diversity and sales growth.",
-    image: "/placeholder.svg?height=250&width=250",
+    image: "../src/assets/biggie/lemonade1.jpeg",
   },
 ]
 
