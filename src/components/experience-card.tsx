@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Zap, Users } from "lucide-react"
@@ -7,7 +6,7 @@ interface ExperienceCardProps {
   title: string
   company: string
   period: string
-  description: string
+  description: string // Keep as string, will split internally
   achievement?: string
   achievementIcon?: "sales" | "locations"
   image: string
@@ -33,6 +32,9 @@ export function ExperienceCard({
     }
   }
 
+  // Split the description by newline characters to create an array of points
+  const descriptionPoints = description.split("\n").filter((point) => point.trim() !== "")
+
   return (
     <Card className="bg-coffee-medium/40 border-cream-light/20 backdrop-blur-sm">
       <CardHeader>
@@ -47,7 +49,11 @@ export function ExperienceCard({
       <CardContent>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="md:col-span-2">
-            <p className="text-cream-light/90 mb-4">{description}</p>
+            <ul className="text-cream-light/90 mb-4 list-disc list-inside space-y-2">
+              {descriptionPoints.map((point, index) => (
+                <li key={index}>{point.trim()}</li>
+              ))}
+            </ul>
             {achievement && (
               <div className="flex items-center gap-2 text-gold-accent font-semibold">
                 {getIcon()}

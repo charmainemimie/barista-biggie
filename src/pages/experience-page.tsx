@@ -25,7 +25,10 @@ export default function ExperiencePage() {
             title="Manager & Barista"
             company="Salute Coffee Co., Pretoria"
             period="February 2024 – Present"
-            description="Orchestrated café operations with finesse, steering a dedicated team, optimizing inventory, and elevating customer experiences in a dynamic, high-volume setting. Leveraged extensive knowledge of Robusta, Arabica, Liberica, and Excelsa beans to select premium varietals, tailoring blends to enhance beverage profiles. Meticulously calibrated grinders to achieve optimal particle size and adjusted extraction parameters to deliver smooth, balanced espresso profiles without bitterness. Mastered milk frothing techniques to create velvety microfoam, enhancing cappuccinos, lattes, and signature drinks. Spearheaded a transformative menu overhaul, introducing innovative beverages like the Cappuccino & Red Velvet Cake Pairing and non-coffee crushers (Raspberry Crusher, Cherry Crusher, Passion Fruit Crusher, Watermelon Crusher), which have driven a 17.5% sales increase to date. Trained staff in bean selection, precision brewing, and frothing methods, ensuring consistent quality across 100+ daily orders, fostering enduring customer loyalty."
+            description={`Orchestrated café operations with finesse, steering a dedicated team and optimizing inventory.
+Elevated customer experiences in a dynamic, high-volume setting.
+Spearheaded a transformative menu overhaul, introducing innovative beverages like the Cappuccino & Red Velvet Cake Pairing.
+Trained staff in bean selection, precision brewing, and frothing methods, ensuring consistent quality across 100+ daily orders.`}
             achievement="17.5% Sales Increase"
             achievementIcon="sales"
             image="../src/assets/biggie/salute1.jpg"
@@ -35,7 +38,10 @@ export default function ExperiencePage() {
             title="Assistant Manager & Barista"
             company="Baristas@Work, Pretoria"
             period="January 2019 – February 2023"
-            description="Directed operations at a bustling Pretoria café, leading a proficient barista team with strategic oversight, streamlining inventory through meticulous stock ordering, and sourcing cost-effective suppliers to optimize operational efficiency. Ensured team excellence by vigilantly supervising staff performance, fostering accountability and adherence to high standards. Applied expert knowledge of Robusta, Arabica, Liberica, and Excelsa beans to curate exceptional roasts, selecting varietals to enhance beverage profiles. Fine-tuned grinder settings to optimize flavor extraction and calibrated espresso machines for smooth, non-bitter shots. Perfected milk frothing to achieve silken textures, elevating beverages like cappuccinos and lattes. Pioneered innovative drinks, including the Coffee Freezo, Mango Crusher, Lemonade Crusher, Pineapple Coconut Crusher, Strawberry Crusher, and Blueberry Vanilla Crusher, which collectively catalyzed a 30% sales surge. Expertly prepared cappuccinos, hot chocolates, café lattes, Americanos, and other artisanal beverages, managing 100+ daily orders with precision and charisma. My strategic leadership and technical expertise cemented the café’s status as a cherished local gem."
+            description={`Directed operations at a bustling Pretoria café, leading a proficient barista team with strategic oversight.
+Streamlined inventory through meticulous stock ordering and sourcing cost-effective suppliers.
+Pioneered innovative drinks including Coffee Freezo, Mango Crusher, and various fruit crushers, catalyzing a 30% sales surge.
+Expertly prepared cappuccinos, hot chocolates, café lattes, Americanos, and other artisanal beverages, managing 100+ daily orders.`}
             achievement="30% Sales Surge"
             achievementIcon="sales"
             image="../src/assets/biggie/baristas1.jpg"
@@ -45,7 +51,10 @@ export default function ExperiencePage() {
             title="Head Barista"
             company="Coffee Cousins, Pretoria"
             period="December 2016 – January 2019"
-            description="Commanded barista operations across three bustling Coffee Cousins locations with authoritative leadership, ensuring seamless operations and exceptional beverage quality. Masterfully managed inventory by overseeing stock sufficiency, coordinating the timely distribution of supplies from central storage to each shop, and maintaining optimal stock levels to support high-volume service. Spearheaded the onboarding and training of new staff, imparting expertise in coffee preparation and customer engagement to uphold impeccable standards. Strategically crafted schedules to ensure efficient staffing across all locations, balancing operational needs with team well-being. Demonstrated mastery in selecting and blending Robusta, Arabica, Liberica, and Excelsa beans to craft balanced, flavorful beverages. Adjusted grinder settings to perfect grind consistency and optimized extraction times for smooth, non-bitter espresso. Excelled in frothing milk to achieve a glossy, velvety texture, enhancing the quality of milk-based drinks. Crafted cappuccinos, hot chocolates, café lattes, Americanos, and diverse beverages, serving 100+ patrons daily with alacrity and warmth. Forged meaningful connections with a diverse clientele, leveraging fluency in English, Shona, and conversational A2 German to cultivate a vibrant, inclusive café culture."
+            description={`Commanded barista operations across three bustling Coffee Cousins locations with authoritative leadership.
+Masterfully managed inventory by overseeing stock sufficiency and coordinating timely supply distribution.
+Spearheaded the onboarding and training of new staff, imparting expertise in coffee preparation and customer engagement.
+Strategically crafted schedules to ensure efficient staffing across all locations, balancing operational needs with team well-being.`}
             achievement="3 Locations Managed"
             achievementIcon="locations"
             image="../src/assets/biggie/coffeecousins1.jpg"
@@ -80,18 +89,13 @@ export default function ExperiencePage() {
                     />
                   </div>
                   <p className="text-cream-light/90">
-                    Engaged as a premier barista for nuptial celebrations across
-                    Pretoria, I meticulously crafted artisanal cappuccinos, hot
-                    chocolates, café lattes, Americanos, and signature beverages
-                    like the Coffee Freezo for gatherings of up to 200 guests.
-                    Applied expertise in grinder calibration and extraction
-                    techniques to ensure every espresso shot was smooth and
-                    flavorful, complemented by perfectly frothed milk for
-                    creamy, visually stunning drinks. Harnessing my leadership
-                    acumen from roles at Baristas@Work and Salute Coffee Co., I
-                    orchestrated mobile coffee stations with unparalleled
-                    precision, delivering exquisite beverages with warmth to
-                    enhance every matrimonial occasion.
+                    Crafted artisanal beverages for nuptial celebrations across
+                    Pretoria, serving up to 200 guests with mobile coffee
+                    stations and signature drinks like Coffee Freezo. Applied
+                    expertise in grinder calibration and extraction techniques
+                    to ensure every espresso shot was smooth and flavorful,
+                    complemented by perfectly frothed milk for creamy, visually
+                    stunning drinks.
                   </p>
                 </div>
               </CardContent>
@@ -118,18 +122,12 @@ export default function ExperiencePage() {
                     />
                   </div>
                   <p className="text-cream-light/90">
-                    At the world-renowned MTN Bushfire Festival in Malkerns
-                    Valley, Eswatini, I dispensed over 5,000 cups of artisanal
-                    coffee, including cappuccinos, hot chocolates, café lattes,
-                    and Americanos, to thousands of attendees from over 60
-                    nations. Utilized precise grinder and extraction settings to
-                    deliver consistently smooth, non-bitter coffee, paired with
-                    expertly frothed milk for exceptional quality in a
-                    high-pressure environment. Drawing on my leadership
-                    expertise from Baristas@Work and Salute Coffee Co., I
-                    managed a mobile coffee café with celerity and panache,
-                    enriching the festival experience at one of Africa’s
-                    preeminent music and arts events.
+                    Served over 5,000 cups of artisanal coffee to thousands of
+                    attendees from 60+ nations at Africa's premier music and
+                    arts festival. Utilized precise grinder and extraction
+                    settings to deliver consistently smooth, non-bitter coffee,
+                    paired with expertly frothed milk for exceptional quality in
+                    a high-pressure environment.
                   </p>
                 </div>
               </CardContent>

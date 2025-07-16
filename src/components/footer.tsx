@@ -56,7 +56,7 @@ export function Footer() {
         <div className="text-center pt-8 border-t border-cream-light/20">
           <p className="text-cream-light/70 text-sm">
             © 2025 Developed by{" "}
-            <a href="mailto:charmaine@example.com" className="text-gold-accent">
+            <a href="mailto:charmainemangorima@gmail.com" className="text-gold-accent">
               Charmaine
             </a>
             . All rights reserved.
