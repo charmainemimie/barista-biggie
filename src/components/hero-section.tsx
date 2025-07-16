@@ -9,7 +9,7 @@ export function HeroSection() {
         <img
           src={handAndCoffee}
           alt="Coffee beans background"
-          className="opacity-60 w-full h-full object-cover" // Adjust opacity of the image
+          className="opacity-100 w-full h-full object-cover" // Adjust opacity of the image
         />
         {/* Gradient Overlay for blending */}
         <div className="absolute inset-0 bg-gradient-to-br from-coffee-dark via-coffee-medium to-coffee-dark opacity-80"></div>
