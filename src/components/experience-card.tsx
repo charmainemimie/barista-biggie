@@ -63,6 +63,7 @@ export function ExperienceCard({
           </div>
           <div className="aspect-square rounded-lg overflow-hidden">
             <img
+              loading="lazy"
               src={image || "/placeholder.svg"}
               alt={`${title} at ${company}`}
               width={200}

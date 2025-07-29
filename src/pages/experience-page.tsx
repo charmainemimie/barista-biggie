@@ -81,6 +81,7 @@ Strategically crafted schedules to ensure efficient staffing across all location
                 <div className="space-y-4">
                   <div className="aspect-video rounded-lg overflow-hidden">
                     <img
+                      loading="lazy"
                       src="../src/assets/biggie/wedding1.jpg"
                       alt="Wedding Coffee Station"
                       width={300}
@@ -114,6 +115,7 @@ Strategically crafted schedules to ensure efficient staffing across all location
                 <div className="space-y-4">
                   <div className="aspect-video rounded-lg overflow-hidden">
                     <img
+                      loading="lazy"    
                       src="../src/assets/biggie/mtn1.jpg"
                       alt="Festival Coffee Setup"
                       width={300}

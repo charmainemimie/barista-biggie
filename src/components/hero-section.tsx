@@ -7,6 +7,7 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
+          loading="lazy"
           src={handAndCoffee}
           alt="Coffee beans background"
           className="opacity-100 w-full h-full object-cover" // Adjust opacity of the image
@@ -20,6 +21,7 @@ export function HeroSection() {
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-cream-light shadow-2xl">
             <img
+              loading="lazy"
               src={profile}
               alt="Biggie Komborerai Shiri"
               width={128}

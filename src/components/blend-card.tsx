@@ -13,6 +13,7 @@ export function BlendCard({ name, description, image }: BlendCardProps) {
       <CardContent className="p-6">
         <div className="aspect-square rounded-lg overflow-hidden mb-4">
           <img
+            loading="lazy"
             src={image || "/placeholder.svg"}
             alt={name}
             width={250}
