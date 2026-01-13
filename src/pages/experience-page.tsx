@@ -6,6 +6,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import salute1 from "@/assets/biggie/salute1.jpg";
+import baristas1 from "@/assets/biggie/baristas1.jpg";
+import coffeecousins1 from "@/assets/biggie/coffeecousins1.jpg";
+import wedding1 from "@/assets/biggie/wedding1.jpg";
+import mtn1 from "@/assets/biggie/mtn1.jpg";
 
 export default function ExperiencePage() {
   return (
@@ -31,7 +36,7 @@ Spearheaded a transformative menu overhaul, introducing innovative beverages lik
 Trained staff in bean selection, precision brewing, and frothing methods, ensuring consistent quality across 100+ daily orders.`}
             achievement="17.5% Sales Increase"
             achievementIcon="sales"
-            image="../src/assets/biggie/salute1.jpg"
+            image={salute1}
           />
 
           <ExperienceCard
@@ -44,7 +49,7 @@ Pioneered innovative drinks including Coffee Freezo, Mango Crusher, and various 
 Expertly prepared cappuccinos, hot chocolates, café lattes, Americanos, and other artisanal beverages, managing 100+ daily orders.`}
             achievement="30% Sales Surge"
             achievementIcon="sales"
-            image="../src/assets/biggie/baristas1.jpg"
+            image={baristas1}
           />
 
           <ExperienceCard
@@ -57,7 +62,7 @@ Spearheaded the onboarding and training of new staff, imparting expertise in cof
 Strategically crafted schedules to ensure efficient staffing across all locations, balancing operational needs with team well-being.`}
             achievement="3 Locations Managed"
             achievementIcon="locations"
-            image="../src/assets/biggie/coffeecousins1.jpg"
+            image={coffeecousins1}
           />
         </div>
 
@@ -82,7 +87,7 @@ Strategically crafted schedules to ensure efficient staffing across all location
                   <div className="aspect-video rounded-lg overflow-hidden">
                     <img
                       loading="lazy"
-                      src="../src/assets/biggie/wedding1.jpg"
+                      src={wedding1}
                       alt="Wedding Coffee Station"
                       width={300}
                       height={200}
@@ -115,8 +120,8 @@ Strategically crafted schedules to ensure efficient staffing across all location
                 <div className="space-y-4">
                   <div className="aspect-video rounded-lg overflow-hidden">
                     <img
-                      loading="lazy"    
-                      src="../src/assets/biggie/mtn1.jpg"
+                      loading="lazy"
+                      src={mtn1}
                       alt="Festival Coffee Setup"
                       width={300}
                       height={200}
