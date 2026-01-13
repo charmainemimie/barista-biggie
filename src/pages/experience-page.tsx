@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import salute1 from "@/assets/biggie/salute1.jpg";
 import baristas1 from "@/assets/biggie/baristas1.jpg";
-import coffeecousins1 from "@/assets/biggie/coffeecousins1.jpg";
+import coffeecousins1 from "@/assets/biggie/coffeecousins1.JPG";
 import wedding1 from "@/assets/biggie/wedding1.jpg";
 import mtn1 from "@/assets/biggie/mtn1.jpg";
 
