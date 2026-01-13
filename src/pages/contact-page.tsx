@@ -43,7 +43,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-3 text-cream-light">
                     <Mail className="w-5 h-5 text-gold-accent" />
-                    <span>biggie.shiri@example.com</span>
+                    <span>biggiekomboreraishiri@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3 text-cream-light">
                     <Phone className="w-5 h-5 text-gold-accent" />
