@@ -10,7 +10,7 @@ import salute1 from "@/assets/biggie/salute1.jpg";
 import baristas1 from "@/assets/biggie/baristas1.jpg";
 import coffeecousins1 from "@/assets/biggie/coffeecousins1.JPG";
 import wedding1 from "@/assets/biggie/wedding1.JPG";
-import mtn1 from "@/assets/biggie/mtn1.jpg";
+import mtn1 from "@/assets/biggie/mtn1.JPG";
 
 export default function ExperiencePage() {
   return (
