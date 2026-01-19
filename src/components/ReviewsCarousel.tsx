@@ -88,9 +88,7 @@ const reviews: Review[] = [
       },
 ]
 
-    //function getVisibleReviews() {
-      //  return reviews;
-    //}
+
   
   export function ReviewsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -120,15 +118,15 @@ const reviews: Review[] = [
     }
   
     return (
-      <section className="py-20 px-4 bg-coffee-dark/80 border-t border-cream-light/10">
+      <section className="py-12 md:py-20 px-2 md:px-4 bg-coffee-dark/80 border-t border-cream-light/10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-cream-light mb-4">
+          <div className="text-center mb-8 md:mb-12 px-2">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-cream-light mb-3 md:mb-4">
               What People Say
             </h2>
-            <div className="w-24 h-1 bg-gold-accent mx-auto mb-4" />
-            <p className="text-cream-light/70 max-w-2xl mx-auto">
-              Testimonials from clients, colleagues and coffee enthusiasts
+            <div className="w-16 md:w-24 h-1 bg-gold-accent mx-auto mb-3 md:mb-4" />
+            <p className="text-cream-light/70 max-w-2xl mx-auto text-sm md:text-base">
+              Testimonials from clients, colleagues, and coffee enthusiasts
             </p>
           </div>
   
@@ -146,59 +144,59 @@ const reviews: Review[] = [
             {/* Navigation Arrows */}
             <button
               onClick={prevSlide}
-              className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-coffee-medium/80 text-cream-light hover:bg-gold-accent hover:text-coffee-dark transition-all duration-300 ${
-                isHovered ? "opacity-100 -translate-x-2" : "opacity-0"
+              className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 rounded-full bg-coffee-medium/80 text-cream-light hover:bg-gold-accent hover:text-coffee-dark transition-all duration-300 ${
+                isHovered ? "opacity-100 md:-translate-x-2" : "opacity-0"
               }`}
               aria-label="Previous review"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
             </button>
   
             <button
               onClick={nextSlide}
-              className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-coffee-medium/80 text-cream-light hover:bg-gold-accent hover:text-coffee-dark transition-all duration-300 ${
-                isHovered ? "opacity-100 translate-x-2" : "opacity-0"
+              className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 rounded-full bg-coffee-medium/80 text-cream-light hover:bg-gold-accent hover:text-coffee-dark transition-all duration-300 ${
+                isHovered ? "opacity-100 md:translate-x-2" : "opacity-0"
               }`}
               aria-label="Next review"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
             </button>
   
             {/* Reviews Container */}
-            <div className="overflow-hidden px-10">
+            <div className="overflow-hidden px-2 md:px-12 lg:px-16">
               <div className="flex justify-center transition-all duration-500 ease-in-out">
                 <div
                   key={getCurrentReview().id}
-                  className="w-full max-w-4xl bg-gradient-to-br from-coffee-medium to-coffee-dark border border-cream-light/20 rounded-2xl p-10 md:p-12 shadow-xl shadow-gold-accent/10"
+                  className="w-full max-w-4xl bg-gradient-to-br from-coffee-medium to-coffee-dark border border-cream-light/20 rounded-xl md:rounded-2xl p-5 md:p-10 lg:p-12 shadow-xl shadow-gold-accent/10"
                 >
-                  <Quote className="w-12 h-12 text-gold-accent/50 mb-4" />
+                  <Quote className="w-8 h-8 md:w-12 md:h-12 text-gold-accent/50 mb-4 md:mb-8" />
   
-                  <div className="text-cream-light/90 text-sm md:text-sm leading-relaxed mb-4">
+                  <div className="text-cream-light/90 text-base md:text-lg lg:text-xl leading-relaxed mb-6 md:mb-10">
                     {getCurrentReview().message.split("\n").map((line, lineIdx) => (
                       <p
                         key={lineIdx}
-                        className={`${line.startsWith("•") ? "pl-6" : ""} ${lineIdx > 0 ? "mt-2" : ""}`}
+                        className={`${line.startsWith("•") ? "pl-4 md:pl-6" : ""} ${lineIdx > 0 ? "mt-2 md:mt-3" : ""}`}
                       >
                         {line}
                       </p>
                     ))}
                   </div>
   
-                  <div className="flex items-center gap-6 pt-4 border-t border-cream-light/10">
-                    <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-gold-accent bg-coffee-medium">
+                  <div className="flex items-center gap-4 md:gap-6 pt-5 md:pt-8 border-t border-cream-light/10">
+                    <div className="relative w-14 h-14 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-gold-accent bg-coffee-medium flex-shrink-0">
                       <img
-                        src={getCurrentReview().image || "/placeholder.svg"}
+                        src={getCurrentReview().image}
                         alt={getCurrentReview().name}
                         className="w-full h-full object-cover"
-                        
+                      
                       />
                     </div>
                     <div>
-                      <h4 className="text-cream-light font-semibold text-lg md:text-xl">
+                      <h4 className="text-cream-light font-semibold text-base md:text-lg lg:text-xl">
                         {getCurrentReview().name}
                       </h4>
-                      <p className="text-gold-accent text-base">{getCurrentReview().title}</p>
-                      <p className="text-cream-light/60 text-base">
+                      <p className="text-gold-accent text-sm md:text-base">{getCurrentReview().title}</p>
+                      <p className="text-cream-light/60 text-sm md:text-base">
                         {getCurrentReview().workplace}
                       </p>
                     </div>
