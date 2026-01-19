@@ -1,16 +1,9 @@
 import type React from "react"
-//import type { Metadata } from "next"
-//import { Inter } from "next/font/google"
-//import "./globals.css"
+
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { ReviewsCarousel } from "@/components/ReviewsCarousel"
 
-/*const inter = Inter({ subsets: ["latin"] })
-
-export const metadata: Metadata = {
-  title: "Biggie Komborerai Shiri - Master Barista Portfolio",
-  description: "Professional barista portfolio showcasing 8 years of coffee artistry and expertise",
-}*/
 
 export default function RootLayout({
   children,
@@ -24,6 +17,7 @@ export default function RootLayout({
       >
         <Navigation />
         <main>{children}</main>
+        <ReviewsCarousel />
         <Footer />
       </body>
     </html>
