@@ -90,10 +90,15 @@ const reviews: Review[] = [
 
 
   
-  export function ReviewsCarousel() {
+export function ReviewsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [isHovered, setIsHovered] = useState(false)
     const [isPaused, setIsPaused] = useState(false)
+    const [touchStart, setTouchStart] = useState<number | null>(null)
+    const [touchEnd, setTouchEnd] = useState<number | null>(null)
+  
+    // Minimum swipe distance to trigger navigation (in pixels)
+    const minSwipeDistance = 50
   
     const nextSlide = useCallback(() => {
       setCurrentIndex((prev) => (prev + 1) % reviews.length)
@@ -102,6 +107,37 @@ const reviews: Review[] = [
     const prevSlide = useCallback(() => {
       setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length)
     }, [])
+  
+    const onTouchStart = (e: React.TouchEvent) => {
+      setTouchEnd(null)
+      setTouchStart(e.targetTouches[0].clientX)
+      setIsPaused(true)
+    }
+  
+    const onTouchMove = (e: React.TouchEvent) => {
+      setTouchEnd(e.targetTouches[0].clientX)
+    }
+  
+    const onTouchEnd = () => {
+      if (!touchStart || !touchEnd) {
+        setIsPaused(false)
+        return
+      }
+      
+      const distance = touchStart - touchEnd
+      const isLeftSwipe = distance > minSwipeDistance
+      const isRightSwipe = distance < -minSwipeDistance
+  
+      if (isLeftSwipe) {
+        nextSlide()
+      } else if (isRightSwipe) {
+        prevSlide()
+      }
+  
+      setTouchStart(null)
+      setTouchEnd(null)
+      setIsPaused(false)
+    }
   
     useEffect(() => {
       if (isPaused) return
@@ -131,7 +167,7 @@ const reviews: Review[] = [
           </div>
   
           <div
-            className="relative"
+            className="relative touch-pan-y"
             onMouseEnter={() => {
               setIsHovered(true)
               setIsPaused(true)
@@ -140,6 +176,9 @@ const reviews: Review[] = [
               setIsHovered(false)
               setIsPaused(false)
             }}
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
           >
             {/* Navigation Arrows */}
             <button
@@ -185,10 +224,9 @@ const reviews: Review[] = [
                   <div className="flex items-center gap-4 md:gap-6 pt-5 md:pt-8 border-t border-cream-light/10">
                     <div className="relative w-14 h-14 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-gold-accent bg-coffee-medium flex-shrink-0">
                       <img
-                        src={getCurrentReview().image}
+                        src={getCurrentReview().image || "/placeholder.svg"}
                         alt={getCurrentReview().name}
                         className="w-full h-full object-cover"
-                      
                       />
                     </div>
                     <div>
