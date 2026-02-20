@@ -22,7 +22,7 @@ export function BlendCard({ name, description, image }: BlendCardProps) {
           />
         </div>
         <h3 className="text-xl font-bold text-gold-accent mb-2">{name}</h3>
-        <p className="text-cream-light/90 text-sm leading-relaxed">
+        <p className="text-cream-light/90 text-sm leading-relaxed whitespace-pre-line">
           {description}
         </p>
       </CardContent>

@@ -2,9 +2,12 @@ import { BlendCard } from "@/components/blend-card";
 import profile1 from "@/assets/biggie/profile1.jpg";
 import redvelvet1 from "@/assets/biggie/redvelvet1.jpg";
 import mango1 from "@/assets/biggie/mango1.png";
-import butterscotch1 from "@/assets/biggie/butterscotch1.jpg";
+//import butterscotch1 from "@/assets/biggie/butterscotch1.jpg";
 import mixedberry1 from "@/assets/biggie/mixedberry1.jpg";
 import lemonade1 from "@/assets/biggie/lemonade1.jpeg";
+import matchamilkshake from "@/assets/biggie/matchamilkshake.jpg";
+import matchamoonmistfrezo from "@/assets/biggie/matchamoonmistfrezo.jpg";
+import butterscotch_icedcoffee from "@/assets/biggie/butterscotch_icedcoffee.jpg";
 
 const blends = [
   {
@@ -26,11 +29,33 @@ const blends = [
     image: mango1,
   },
   {
-    name: "Butterscotch Latte",
-    description:
-      "Decadent masterpiece with robust espresso, creamy white symphony, and rich butterscotch syrup, crowned with impeccably frothed milk for a velvety finish.",
-    image: butterscotch1,
+    name: "Butterscotch Freezo & Hazelnut Iced Coffee",
+    description: (
+      <>
+        <span className="font-bold">Butterscotch Freezo:</span>
+        {"\n"}
+        Velvet espresso tempest collides with molten butterscotch nectar, entwined in a crashed-ice maelstrom veiled by creamy White Symphony white-chocolate silk. Scorched-sugar stardust crowns this gilded, frozen rapture on shattered crystal ice.
+        {"\n\n"}
+        <span className="font-bold">Hazelnut Iced Coffee:</span>
+        {"\n"}
+        Double espresso shadowed by silken hazelnut syrup elixir, cascading through chilled milk veils, crowned in whisper-soft nut-kissed froth. An enchanted, chilled grove in every seductive sip.
+      </>
+    ),
+    image: butterscotch_icedcoffee,
   },
+  {
+    name: "Matcha Moon Mist Frezo",
+    description:
+      "Luminous matcha nebula blended into crushed-ice silk, veiled in pillowy green foam that drifts like mist over Kyoto hills. A frozen ritual of vibrant green serenity, where umami whispers meet tropical frost on the tongue.",
+    image: matchamoonmistfrezo,
+  },
+  {
+    name: "Matcha Milkshake",
+    description:
+      "Velvety vanilla ice cream fused with ceremonial matcha elixir, spun into a lush emerald cream dream. Crowned with billowing whipped silk and a shimmering veil of jade-green matcha stardust an opulent, earthy-sweet ritual chilled to perfection.",
+    image: matchamilkshake,
+  },
+
   {
     name: "Mixedberry Crusher",
     description:
