@@ -1,9 +1,9 @@
-
+import type { ReactNode } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 type BlendCardProps = {
   name: string;
-  description: string;
+  description: string | ReactNode;
   image: string;
 };
 
